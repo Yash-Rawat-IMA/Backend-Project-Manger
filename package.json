@@ -1,0 +1,20 @@
+{
+  "name": "projet_management",
+  "version": "1.0.0",
+  "description": "Beginer level project management application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "backend",
+    "API"
+  ],
+  "author": "Yash Rawat",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
+}
