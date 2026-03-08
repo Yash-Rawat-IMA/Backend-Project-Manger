@@ -33,4 +33,13 @@ app.get("/test", (req, res) => {
     res.send("Testing is going on!")
 })
 
+// GLOBAL ERROR HANDLER (always last)
+app.use((err, req, res, next) => {
+    res.status(err.statusCode || 500).json({
+        success: false,
+        message: err.message,
+        errors: err.errors || []
+    });
+});
+
 export default app;
